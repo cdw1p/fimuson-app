@@ -1,0 +1,28 @@
+{
+  "name": "fimuson-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdw1p/fimuson-app.git"
+  },
+  "author": "cdw1p",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdw1p/fimuson-app/issues"
+  },
+  "homepage": "https://github.com/cdw1p/fimuson-app#readme",
+    "dependencies": {
+    "axios": "^0.21.4",
+    "compression": "^1.7.4",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  }
+}

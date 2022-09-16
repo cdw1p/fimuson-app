@@ -10,7 +10,7 @@ $('#btnSearch').click(function () {
     alertDanger(`<b>PERHATIAN!</b> Keyword Pencarian Tidak Boleh Kosong.`)
     $('textarea[id=textInput]').focus()
   } else if (!(inputType)) {
-    alertDanger(`<b>PERHATIAN!</b>> Tipe Metode Tidak Tidak Boleh Kosong.`)
+    alertDanger(`<b>PERHATIAN!</b> Tipe Metode Tidak Tidak Boleh Kosong.`)
   } else {
     alertDefault()
     buttonLoading()

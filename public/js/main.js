@@ -7,10 +7,10 @@ $('#btnSearch').click(function () {
   const inputString = $('textarea[id=textInput]').val()
   const inputType = $('input:radio[name=textMethod]:checked').val()
   if (inputString.length < 1) {
-    alertDanger(`PERHATIAN! Keyword Pencarian Tidak Boleh Kosong.`)
+    alertDanger(`<b>PERHATIAN!</b> Keyword Pencarian Tidak Boleh Kosong.`)
     $('textarea[id=textInput]').focus()
   } else if (!(inputType)) {
-    alertDanger(`PERHATIAN! Tipe Metode Tidak Tidak Boleh Kosong.`)
+    alertDanger(`<b>PERHATIAN!</b>> Tipe Metode Tidak Tidak Boleh Kosong.`)
   } else {
     alertDefault()
     buttonLoading()
@@ -31,7 +31,7 @@ $('#btnSearch').click(function () {
         }
         $('#textOutput').html(`
           <hr>
-            <h5>Berikut Hasil Pencarian Anda :</h4>
+            <h5>Berikut Hasil Pencarian Anda (${data.data.length}) :</h4>
           </hr>
           <table class="table">
             <thead>
@@ -48,7 +48,7 @@ $('#btnSearch').click(function () {
           </table>
         `)
         buttonDefault()
-        alertSuccess('SELAMAT! Sistem Menampilkan Hasil Pencarian Anda.')
+        alertSuccess('<b>SELAMAT!</b> Sistem Berhasil Menampilkan Hasil Pencarian Anda.')
       },
       error: function (err) {
         buttonDefault()
